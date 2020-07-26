@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"> 
+    <!-- font-family: 'Ranchers', cursive; -->
+    <title>Movie Quiz</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Test your movie might</h1>
+
+        <h2>Name the movie titles of the images below</h2>
+        <form>
+            <div class="imageContainer">
+                <img src="./assets/gladiatorimage.webp" alt="gladiator" id="">
+                <label for="gladiator" class="sr-only"></label>
+                <input type="text" id="gladiator" placeholder= "Put your guess here" required>
+            </div>
+            <div class="imageContainer">
+                <img src="./assets/spiderman.jpg" alt="spiderman" id="">
+                <label for="spiderman" class="sr-only"></label>
+                <input type="text" id="spiderman" placeholder= "Put your guess here" required>
+            </div>
+            <div class="imageContainer">
+                <img src="./assets/batmanimage.jpg" alt="batman" id="">
+                <label for="batman" class="sr-only"></label>
+                <input type="text" id="batman" placeholder= "Put your guess here" required>
+            </div>
+            <div>
+                <button type="submit" class="quizSubmit">Submit Answers</button>
+            </div>
+        </form>
+        <section class="resultArea" id='results'></section>
+    </div>
+
+
+
+<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src='./script.js'></script>
+
+
+
+</body>
+</html>
